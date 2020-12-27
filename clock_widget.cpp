@@ -72,7 +72,7 @@ void Clock::paintEvent(QPaintEvent *)
     p.drawText(-170, 10,   "9");
     p.drawText(-20,  -150, "12");
 
-    // seconds
+    //seconds
     p.save();
     p.rotate( 180 + _seconds * 6);
     p.scale(20,20);
@@ -80,7 +80,7 @@ void Clock::paintEvent(QPaintEvent *)
     drawArrow(p);
     p.restore();
 
-    // hours
+    //hours
     p.save();
     p.rotate( 180 + _minutes * 6);
     p.scale(7,7);
@@ -88,7 +88,7 @@ void Clock::paintEvent(QPaintEvent *)
     drawArrow(p);
     p.restore();
 
-    // minutes
+    //minutes
     p.save();
     p.rotate( 180 + _hours * 30);
     p.scale(16,16);
